@@ -36,7 +36,8 @@ main {
 /* Color de los enlaces del navbar */
 a {
   color: white !important;
-  text-decoration: underline;
+  text-decoration: none;
+
 }
 
 .navbar {
