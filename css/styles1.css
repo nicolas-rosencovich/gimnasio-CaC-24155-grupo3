@@ -44,6 +44,7 @@ a {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.299);
   background-color: #00000060 !important;
   display: flex;
+  --bs-navbar-brand-font-size: 2rem;
 }
 
 .container1 {
@@ -141,6 +142,34 @@ a {
 
 
 
+
+/* nav off canvas */
+.nav-link active{
+  color:black
+}
+
+
+/* De acá hereda la mayoría de los estilos */
+
+
+
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-offcanvas-bg:rgb(237, 57, 57)  !important;
+  --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-title-line-height: 1.5;
+}
+
+
 /* Landing section------------------- */
 .section1-landing{
     margin-left: 15vh;
@@ -204,9 +233,15 @@ a {
   text-align:left;
   padding: 10px ;
   font-size: 2rem;
-  border: 5px solid var(--mainRed);
+ 
+ border: 5px solid rgb(237, 57, 57) ;
   border-radius: 20px;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.044);
+}
+.grid-item:hover{
+  background-color: rgba(142, 142, 142, 0.342);
+
 }
 
 .grid-item-1 {
@@ -216,6 +251,12 @@ a {
   align-items: center;
   padding: 10px;
   margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.044);
+ 
+}
+.grid-item-1:hover{
+  background-color: rgba(142, 142, 142, 0.342);
+
 }
 
 .planes{
