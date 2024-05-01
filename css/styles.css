@@ -200,8 +200,10 @@ a {
 
 
 /* nav off canvas */
-.nav-link active{
-  color:black
+.nav-link{
+  color:black;
+  font-size: 1.25rem;
+
 }
 
 
