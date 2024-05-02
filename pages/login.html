@@ -15,43 +15,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/styles1.css"> <!-- modificado x Karina -->
+  <link rel="stylesheet" href="../css/styles.css"> <!-- modificado x Karina -->
   <title>FitnessFusion - Crea tu cuenta </title>
 </head>
 
 <body>
+  <header class="navbar">
 
-  <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Fitness Fusion</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mi gym</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./planes.html">Planes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Login</a>
-            </li>
+    <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Fitness Fusion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mi gym</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
 
-            </li>
-          </ul>
+              </li>
+            </ul>
 
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main>
     <div class="container1">
@@ -59,22 +61,23 @@
         <div class="text-container">
           <div class="container-form">
             <div class="form-login">
-              <h2>Bienvenido</h2> 
+              <h2>Bienvenido</h2>
               <p>Si ya estas registrado, por favor Iniciá Sesión con tus datos</p>
+
               <input type="button" value="Iniciar Sesión" class="main-btn">
             </div>
             <div class="form-registro">
               <h2>Crear cuenta</h2>
               <p>Completá tus datos</p>
               <form action="show-data.html" target="_blank">
-                <label for="name">Nombre:  <input type="text" placeholder="Nombre y Apellido"></label>
+                <label for="name">Nombre: <input type="text" placeholder="Nombre y Apellido"></label>
                 <label for="tel">Teléfono: <input type="tel" placeholder="Sin 0 y sin 15"></label>
-                <label for="BirthDate">Fecha de Nacimiento:  <input type="date" name="birthdate"></label>
+                <label for="BirthDate">Fecha de Nacimiento: <input type="date" name="birthdate"></label>
                 <p>Género </p>
-                  <input type="radio" name="gender" value="hombre" checked>Hombre
-                  <input type="radio" name="gender" value="Mujer">Mujer
-                  <input type="radio" name="gender" value="Otro"> Otro
-                
+                <input type="radio" name="gender" value="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer">Mujer
+                <input type="radio" name="gender" value="Otro"> Otro
+
                 <label for="mail">Mail: <input type="email" name="mail"></label>
                 <label for="clave">Contraseña: <input type="password" name="clave"></label>
                 <input type="submit" value="Enviar" class="main-btn">
@@ -91,6 +94,15 @@
 
     </div>
   </main>
+
+  <footer>
+    <div class="footer-conteiner">
+      <h6>© Fitness Fusion 2024 </h6>
+      <a href="https://www.instagram.com/" target="_blank" <i class="fa-brands fa-instagram fa-2xl"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" <i class="fa-brands fa-facebook fa-2xl"></i></a>
+
+    </div>
+  </footer>
 
   <!-- Source de Boostrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

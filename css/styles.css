@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /*   font-family: 'Plus Jakarta Sans', sans-serif; */
 
-
-
-
-
 /* Creo un root para facilitar la disposicion y paleta de colores */
 :root{
      --mainRed:  rgb(237, 57, 57);
@@ -44,6 +40,7 @@ a {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.299);
   background-color: #00000060 !important;
   display: flex;
+  --bs-navbar-brand-font-size: 2rem;
 }
 
 .container1 {
@@ -112,9 +109,6 @@ a {
     }
   }
   
- 
-  
-
 .main-btn {
   padding: 10px 20px;
   background-color: var(--mainRed) !important;
@@ -124,8 +118,6 @@ a {
   font-size: 16px;
   cursor: pointer;
 }
-
-
 
 /* Estilos adicionales que ya tenías */
 .navbar-toggler {
@@ -139,16 +131,11 @@ a {
   transition: var(--bs-navbar-toggler-transition);
 }
 
-
-
-
-
-
 /* Landing section------------------- */
 .section1-landing{
     margin-left: 15vh;
     margin-top: 10vh;
-    height: 90vh;
+    /* height: 90vh; */
     }
   
   .main-title{
@@ -156,7 +143,6 @@ a {
   font-family:'Plus Jakarta Sans', sans-serif;
   font-size: 76px;
   color: #f3f3f3;
-  
   
   }
   
@@ -166,7 +152,6 @@ a {
     margin-top: 5vh;
   
   }
-  
   
   .main-btn{
   background-color: var(--Blue2);
@@ -194,7 +179,185 @@ a {
     color: rgb(237, 57, 57);
 }
 
+/* nav off canvas */
+.nav-link{
+  color:black;
+  font-size: 1.25rem;
+
+}
 
 
+/* De acá hereda la mayoría de los estilos */
 
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-offcanvas-bg:rgb(237, 57, 57)  !important;
+ 
+  --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-title-line-height: 1.5;
+}
+
+.footer-conteiner{
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.299);
+  background-color: #00000060 !important;
+  height: 60px;
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* Estilos de la grilla de planes */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  column-gap: 50px;        /*Espacios entre las columnas de hijos*/
+}
+
+.grid-item {
+  text-align:left;
+  padding: 10px ;
+  font-size: 2rem;
+ 
+ border: 5px solid rgb(237, 57, 57) ;
+  border-radius: 20px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.044);
+}
+.grid-item:hover{
+  background-color: rgba(142, 142, 142, 0.342);
+
+}
+
+.grid-item-1 {
+  grid-column: 1/4;
+  border: 5px solid var(--mainRed);
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.044);
+ 
+}
+.grid-item-1:hover{
+  background-color: rgba(142, 142, 142, 0.342);
+
+}
+
+.planes{
+  color:var(--Grey2);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wsp-btn {
+  position: absolute;
+  bottom: -80px; /* Ajusta la posición vertical */
+  right: 40px; /* Ajusta la posición horizontal */
+}
+
+
+/*Estilos del form*/
+
+.container-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--mainRed);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.form-registro{
+  padding: 30px;
+  width: 60%;
+  background-color: #12285e;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.form-registro label{
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 0 10px;
+  
+}
+
+.form-registro label input{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #5772bcc2;
+
+}
+/* Responsive Form*/
+
+
+/* Para dispositivos móviles pequeños (teléfonos) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Cambia a una columna */
+    padding: 5px; /* Reduce el padding */
+    column-gap: 10px; /* Reduce el espacio entre columnas */
+  }
+
+  .grid-item {
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    padding: 5px; /* Reduce el padding */
+  }
+
+  .grid-item-1 {
+    grid-column: 1/2; /* Ocupa solo una columna */
+    padding: 5px; /* Reduce el padding */
+    margin-top: 10px; /* Reduce el margen superior */
+  }
+
+  .wsp-btn {
+    bottom: -60px; /* Ajusta la posición vertical */
+    right: 20px; /* Ajusta la posición horizontal */
+  }
+
+  .container-form {
+    width: 90%; /* Reduce el ancho del formulario */
+  }
+}
+
+/* Para tabletas */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    padding: 10px; /* Restaura el padding original */
+    column-gap: 30px; /* Reducción moderada del espacio entre columnas */
+  }
+
+  .grid-item {
+    font-size: 1.8rem; /* Reduce ligeramente el tamaño de la fuente */
+    padding: 8px; /* Ajusta el padding */
+  }
+
+  .grid-item-1 {
+    margin-top: 12px; /* Ajusta el margen superior */
+  }
+
+  .wsp-btn {
+    bottom: -70px; /* Ajusta la posición vertical */
+    right: 30px; /* Ajusta la posición horizontal */
+  }
+}
+
+/* Para pantallas de escritorio */
+@media (min-width: 1025px) {
+  /* No hay cambios, se utiliza el estilo original */
+}
 
