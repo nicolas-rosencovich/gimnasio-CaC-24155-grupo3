@@ -44,6 +44,7 @@ a {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.299);
   background-color: #00000060 !important;
   display: flex;
+  --bs-navbar-brand-font-size: 2rem;
 }
 
 .container1 {
@@ -197,4 +198,33 @@ a {
 
 
 
+
+/* nav off canvas */
+.nav-link{
+  color:black;
+  font-size: 1.25rem;
+
+}
+
+
+/* De acá hereda la mayoría de los estilos */
+
+
+
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-offcanvas-bg:rgb(237, 57, 57)  !important;
+ 
+  --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-title-line-height: 1.5;
+}
 
